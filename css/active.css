@@ -1,0 +1,71 @@
+/* Edmund Sin CSS document */
+body {
+  background-image: linear-gradient(to bottom right, aquamarine, midnightblue);
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  height: 40px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #B90101;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 40px;
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  color: #B90101;
+  height: 30px;
+
+}
+
+h1 {font-size: 200%;
+  text-align: center;
+}
+
+p {
+  width: 80%;
+}
+
+hr {
+    height: 1px;
+    border: 0; border-top: 1px solid black;
+}
+
+a:link, a:visited, a:active {
+  color: #5CF3DF;
+  background-color: midnightblue;
+}
+
+img{
+  padding: 10px;
+}
+
+table {
+width: 70%;
+background-color: rgba(0,0,0,0);
+color: black;
+border-collapse: collapse;
+
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+tr:hover {background-color: gold;}
+
+th {
+  font-size: 130%;
+  height: 50px;
+  background:linear-gradient(to bottom right, gold, #897C2B);
+  color: black;
+  text-align: left;
+  padding: 15px;
+
+}

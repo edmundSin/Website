@@ -1,0 +1,136 @@
+$primary-color: #FF0000;
+$submit-btn-bg-color: black;
+$submit-btn-color: white;
+
+
+body, html {
+    margin: 0;
+
+}
+
+body{
+    height: 100%;
+    font-family: "Helvetica Neue";
+
+}
+
+header{ 
+    position: absolute;
+    padding: 1em;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 2em);
+    color: black;
+    
+
+    a {
+        text-decoration: none;
+        
+    
+    }
+
+    a.logo {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FF0000; 
+    }
+
+    nav ul {
+        list-style-type:none;
+        display: flex;
+        justify-content: space-around;
+        width : 100%;
+        margin: 0;
+        padding: 0;
+
+        li a {
+            padding: 1em;
+        }
+
+    }
+}
+
+.wrapper {
+
+    display: grid;
+    grid-template-columns: auto;
+
+    section {
+        padding: 3em;
+
+        h1, h2, .read-btwn {
+            text-transform: uppercase;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.4rem;
+
+        }
+    .clipper {
+        overflow:hidden;
+    }
+   
+    }
+    section.hero {
+        padding-top: 8em;
+        background: url('../images/mountain0.jpg');
+        background-size: cover;
+
+        p{
+            width: 50%;
+            font-size: 1.2rem;
+            margin-bottom: 0;
+
+        }
+
+        h1{
+            font-size: 2.2rem;
+            color: #FF0000;
+        }
+
+    }
+    
+    section.sidebar {
+        background: #00DDD4;
+
+
+        
+
+    }
+    
+   
+
+    
+}
+
+@media only screen and (min-width: 768px){
+    html{
+        font-size: 18px;
+    }
+
+.wrapper{
+    grid-template-columns: 70% auto;
+    grid-template-rows: 60% auto;
+    grid-template-areas: "hero featured" "hero contact";
+
+    height: 100vh;
+
+}
+section.hero{
+    grid-area: hero;
+}
+
+section{
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+
+}
+}
+
+@media only screen and (min-width: 1800px) {
+    html{
+        font-size: 21px;
+    }
+}
